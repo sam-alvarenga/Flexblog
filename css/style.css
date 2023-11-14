@@ -1,7 +1,86 @@
-*{
-    font-family: 'Nunito Sans', sans-serif;
+/* root: equivale a toda a estrutura do elemento html, é parecida com a tag html com a diferença que a especificidade de: root é maior */
+:root {
+    --background-blue-dark: #122ab2;
+    --background-blue-bright: #2c70ff;
+    --background-gray-soft: #f7f7f7;
+    --row-purple: #ae81ff;
+    --row-pink: #f9265e;
+    --row-blue: #66d9eb;
+    --color-gray-soft: #a4a4a4;
+    --color-gray-strong: #7c7c7c;
+    --color-black-bright: #222222;
 }
 
-:root {
+/* Gerais - Reset  */
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
+.superinfo-bg {
+    background-color: var(--background-blue-dark);
+    color: #fff
+}
+
+.superinfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px 0;
+
+
+}
+
+.superinfo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-bg {
+    background-color: var(--background-blue-bright);
+}
+
+.menu {
+    max-width: 960px;
+   /*  border: 2px solid red; */
+    margin: 0 auto;
+    display: flex;
+    /* alinha o elemento na horizontal */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Alinha o elemento na vertical */
+    align-items: center;
+}
+
+.menu a {
+    color: #fff;
+
+
+}
+
+.menu-logo a {
+    font-size: 2.25em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    padding: 10px;
+    text-decoration: none;
+    transition: .5s;
+}
+.menu-nav a:hover{
+    color: var(--background-blue-dark);
 }

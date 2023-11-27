@@ -289,6 +289,7 @@
     padding: 60px 140px;
     display: flex;
     flex-wrap: wrap;
+    justify-content:space-around;
 }
 
 .newsletter-info {
@@ -331,4 +332,32 @@
     padding: 15px 10px;
     margin: 0;
     border-radius: 0px;
+}
+.newsletter-form button{
+    min-width: 260px;
+    width: 260px;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;    
+    font-size:2.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: var(--background-blue-bright);
+    color:#fff;
+    margin: 0px;
+    border: none;
+    padding: 15px 10px;
+}
+
+
+.footer{
+    display: flex;
+    background: var(--background-blue-bright);
+    align-items: center;
+    height: 200px;
+}
+
+.footer p{
+    text-align: center;
+    font-size: 2.25em;
+    color: #fff;
+    margin: 0 auto;
 }
